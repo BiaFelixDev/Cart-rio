@@ -128,9 +128,10 @@ int main () //ponto de partida para a execução do programa
 		
 		printf("##### Registro de Nomes | EBAC #####\n\n"); //início do menu
 		printf("Selecione a opção desejada do menu:\n\n"); //enunciado do menu
-		printf("\t1: Registrar nomes\n"); //comando que leva a primeira opção ao usuário
-		printf("\t2: Consultar nomes\n"); //comando que leva a segunda opção ao usuário
-		printf("\t3: Deletar nomes\n\n"); //comando que leva a terceira opção ao usuário
+		printf("\t1: Registrar nomes\n"); //comando que leva à primeira opção ao usuário
+		printf("\t2: Consultar nomes\n"); //comando que leva à segunda opção ao usuário
+		printf("\t3: Deletar nomes\n"); //comando que leva à terceira opção ao usuário
+		printf("\t4: Sair do sistema\n\n"); //comando que leva à quarta opção do usuário
 		printf("Opção:"); //final do menu
 		
 		scanf("%d", &opcao); //"%d" armazena a escolha do usuário para a variável do tipo inteira
@@ -151,6 +152,11 @@ int main () //ponto de partida para a execução do programa
 			deletar(); //chamada das funções
 			break; //encerra o comando
 			
+			case 4: //quarto caso/comando
+			printf("Obrigado por utilizar o sistema!\n"); //comando que leva o texto ao usuário
+			return 0; //quebra o laço e nos permite sair do sistema
+			break; //encerra o comando
+				
 			default: //abrange as exceções da variável switch
 			printf("Essa opção não está disponível!\n"); //comando que leva o texto ao usuário
 			system("pause"); //mantém a mensagem acima aparecendo para o usuário
